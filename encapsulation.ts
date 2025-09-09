@@ -92,41 +92,100 @@
 
 //! Task 4
 
-interface Course {
-    id: number
-    name: string
-    description: string
-    price: number
-}
+// class Course {
+//     private title: string;
+//     private description: string;
+//     private price: number;
+//     private teacher: Teacher | null = null;
+//     private students: Student[] = [];
 
-class Student {
-    private id: number = 1
-    private name?: string
-    private courses?: Course[]
+//     constructor(title: string, description: string, price: number) {
+//         this.title = title;
+//         this.description = description;
+//         this.price = price;
+//     }
 
-    constructor(initialName: string, initialCourses: Course[]) {
-        this.id += 1
-        this.name = initialName
-        this.courses = initialCourses
-    }
+//     addStudent(student: Student) {
+//         this.students.push(student);
+//     }
 
-    enroll(course: Course[]) {
+//     removeStudent(student: Student) {
+//         this.students = this.students.filter(s => s !== student);
+//     }
 
-    }
+//     setTeacher(teacher: Teacher) {
+//         this.teacher = teacher;
+//     }
 
-    drop(course: Course) {
+//     listStudents() {
+//         return this.students.map(s => s.getName());
+//     }
 
-    }
+//     getTitle() {
+//         return this.title;
+//     }
+// }
 
-    listCourses() {
+// class Student {
+//     private name: string;
+//     private courses: Course[] = [];
 
-    }
-}
+//     constructor( name: string) {
+//         this.name = name;
+//     }
 
-class Teacher {
+//     enroll(course: Course) {
+//         this.courses.push(course);
+//         course.addStudent(this);
+//     }
 
-}
+//     drop(course: Course) {
+//         this.courses = this.courses.filter(c => c !== course);
+//         course.removeStudent(this);
+//     }
 
-class Course {
+//     listCourses() {
+//         return this.courses.map(c => c.getTitle());
+//     }
 
-}
+//     getName() {
+//         return this.name;
+//     }
+// }
+
+// class Teacher {
+//     private id: number;
+//     private name: string;
+//     private courses: Course[] = [];
+
+//     constructor(id: number, name: string) {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     assignCourse(course: Course) {
+//         this.courses.push(course);
+//         course.setTeacher(this);
+//     }
+
+//     listCourses() {
+//         return this.courses.map(c => c.getTitle());
+//     }
+
+//     getName() {
+//         return this.name;
+//     }
+// }
+
+// const math = new Course("Math 101", "Basic Mathematics", 200);
+// const physics = new Course("Physics 101", "Intro to Physics", 300);
+// const ramazan = new Student("Ramazan");
+// const teacherAli = new Teacher(1, "Ali");
+
+// ramazan.enroll(math);
+// ramazan.enroll(physics);
+// teacherAli.assignCourse(math);
+
+// console.log("Math kursunun tələbələri:", math.listStudents());
+// console.log("Ramazanın kursları:", ramazan.listCourses());
+// console.log("Ali müəllimin kursları:", teacherAli.listCourses());
