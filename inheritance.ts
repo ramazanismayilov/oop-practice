@@ -105,7 +105,7 @@
 // moto.wheelie();
 
 
-//! Task 3
+//! Task 4
 
 // class Employee {
 //     constructor(
@@ -133,7 +133,7 @@
 //     }
 
 //     work(): void {
-//         console.log(`${this.name} is writing code 💻`);
+//         console.log(`${this.name} is writing code`);
 //     }
 // }
 
@@ -143,7 +143,7 @@
 //     }
 
 //     work(): void {
-//         console.log(`${this.name} is managing the team 📊`);
+//         console.log(`${this.name} is managing the team`);
 //     }
 // }
 
@@ -153,7 +153,7 @@
 //     }
 
 //     work(): void {
-//         console.log(`${this.name} is assisting the team 📝`);
+//         console.log(`${this.name} is assisting the team`);
 //     }
 // }
 
